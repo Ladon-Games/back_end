@@ -1,10 +1,10 @@
-const express = require("express");
-const app = express();
+const app = require("express")();
+const port = process.env.PORT || 5000;
 
 const routes = require("./routes/router");
 
 app.use('/', routes);
 
-app.listen(process.env.PORT || 5000, function () {
-    console.log("Server started in http://localhost:5000/");
+app.listen(port, function () {
+    console.log(`Server started in http://localhost:${port}/`);
 })
