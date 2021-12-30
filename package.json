@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Endpoits e Apis para o Projeto Greay",
   "scripts": {
-    "dev": "nodemon devServer.js"
+    "dev": "nodemon devServer.js",
+    "start": "node devServer.js"
   },
   "repository": {
     "type": "git",
