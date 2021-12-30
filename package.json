@@ -1,0 +1,20 @@
+{
+  "name": "greay_backend",
+  "version": "0.0.1",
+  "description": "Endpoits e Apis para o Projeto Greay",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://ToMattBan@github.com/Projeto-Greay/back_end.git"
+  },
+  "author": "ToMattBan & Cicero Vinicius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Projeto-Greay/back_end/issues"
+  },
+  "homepage": "https://github.com/Projeto-Greay/back_end#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
