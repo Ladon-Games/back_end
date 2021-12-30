@@ -2,7 +2,9 @@
   "name": "greay_backend",
   "version": "0.0.1",
   "description": "Endpoits e Apis para o Projeto Greay",
-  "scripts": {},
+  "scripts": {
+    "dev": "nodemon devServer.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://ToMattBan@github.com/Projeto-Greay/back_end.git"
