@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 var integracoesLogin = require('express').Router()
   , passport = require('passport')
   , session = require('express-session')
@@ -23,15 +21,16 @@ passport.use(new SteamStrategy({
     process.nextTick(function () {
 
       profile.identifier = identifier;
-      console.log(identifier);
+      global.userAccounts.steam = profile;
+
       return done(null, profile);
     });
   }
 ));
 
 integracoesLogin.use(session({
-  secret: 'your secret',
-  name: 'name of session id',
+  secret: 'GREAYÉTOP',
+  name: 'Greay',
   resave: true,
   saveUninitialized: true
 }));
