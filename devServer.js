@@ -1,7 +1,8 @@
-const app = require("express")();
-const port = process.env.PORT || 5000;
+require('dotenv').config()
 
-const routes = require("./routes/router");
+const app = require('express')()
+    , port = process.env.PORT || process.env.PORT_LOCAL
+    , routes = require("./routes/router");
 
 app.use('/', routes);
 
