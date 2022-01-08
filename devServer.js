@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const app = require('express')()
-    , port = process.env.PORT || process.env.PORT_LOCAL
+    , port = process.env.PORT
     , routes = require("./routes/router")
     , globalFunctions = require('./functions/globais');
 
