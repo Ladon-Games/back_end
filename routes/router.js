@@ -1,7 +1,7 @@
 const routes = require("express").Router()
     , passport = require('passport');
 
-const integracoesLogin = require('./integracoesLogin')
+const loginIntegrations = require('./loginIntegrations')
     , endpoint = require('./endpoint');
 
 routes.get('/', function(req, res) {
@@ -11,7 +11,7 @@ routes.get('/', function(req, res) {
 routes.use(passport.initialize());
 routes.use(passport.session());
 
-routes.use('/integracoesLogin', integracoesLogin);
+routes.use('/loginIntegrations', loginIntegrations);
 routes.use('/endpoint', endpoint);
 
 module.exports = routes
